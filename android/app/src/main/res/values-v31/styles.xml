@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.CustomSplash" parent="Theme.App">
+        <item name="android:windowBackground">@drawable/splash_init_icon</item>
+        <item name="postSplashScreenTheme">@style/Theme.App</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_init_bg_color</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_init_icon</item>
+    </style>
+</resources>
