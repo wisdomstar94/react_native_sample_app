@@ -10,12 +10,14 @@ export function Splash() {
   }
 
   async function init() {
-    // ...
+    // initialize code...
     await new Promise(function(resolve, reject) {
       setTimeout(() => {
         resolve(undefined);
       }, 3000);
     });
+    // ...
+
     setIninted(true);
   }
 
@@ -24,7 +26,6 @@ export function Splash() {
       init();
     } catch(e) {
       console.error(e);
-
     }
   }, []);
 
@@ -45,7 +46,7 @@ export function Splash() {
           justifyContent: 'center',
           alignItems: 'center',
           // flexDirection: 'column',
-          backgroundColor: '#fff',
+          backgroundColor: '#127AF5',
         }}>
         <LottieView
           style={{
