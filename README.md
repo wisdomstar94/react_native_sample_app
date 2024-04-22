@@ -20,7 +20,7 @@ android 12 버전부터 기본으로 OS단에서 Splash Screen 이 제공되는�
 
 ## Splash Screen 배경 색상 커스터마이징 (IOS)
 ### 1. `ios/react_native_sample_app/AppDelegate.mm` 에서 아래와 같이 수정합니다.
-![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/22554224-b9bb-4240-8153-151e25f69e7f) 
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/c89c29a0-f55e-4c1d-bc4d-b7ee3514fe40)
 
-위 이미지에서 노란색 박스로 표시한 colorWithRed, green, blue 부분에는 RGB(0~1.0) 값을 입력하면 되는데, 아래 사이트에 접속하면 특정 포맷의 색상 값을 다양한 색상 포맷으로 변환시켜 줍니다. 그 중에서 `sRGB   0-1.0` 에 해당하는 값을 사용하면 됩니다.
+위 이미지에서 빨간색 박스로 표시한 colorWithRed, green, blue 의 값을 RGB(0~1.0) 값으로 수정하면 되는데, 아래 사이트에 접속하면 특정 포맷의 색상 값을 다양한 색상 포맷으로 변환시켜 줍니다. 그 중에서 `sRGB   0-1.0` 에 해당하는 값을 사용하면 됩니다.
 https://www.easyrgb.com/en/convert.php#inputFORM 
