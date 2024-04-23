@@ -65,7 +65,7 @@ android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다
 ![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/eff2a020-0cf3-437d-9a34-aadef7bc23a5)
 
 ### 4. 앱 아이콘을 등록합니다.
-![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/eccc0901-8b20-4099-90b2-5f8ccbf07247)
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/63503442-00ab-416a-b6d1-1cedfae765e6)
 위 이미지와 같이 icon type 은 "Launcher Icons (Adaptive and Legacy)" 를 선택한 후 Foreground Layer, Background Layer 에 해당하는 이미지를 등록해주세요. 그리고 옆에 미리보기가 표시되는데, 둥근 원안에 전경(foreground) 이미지가 온전히 들어가 있는지 확인해주시고, 만약 둥근 원 밖을 초과했을 경우 전경 이미지의 상하좌우 여백을 더 준 이미지로 교체해야 합니다. 모두 완료가 되었다면 Next 버튼을 클릭후 Finish 버튼을 클릭해주세요.
 
 ### 5. `android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml` 파일을 아래와 같이 수정합니다.
