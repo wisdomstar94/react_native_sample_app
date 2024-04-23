@@ -73,3 +73,6 @@ android/app/src/main/assets/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# others
+android/app/src/main/res/drawable-mdpi/node_modules_reactnative_libraries_newappscreen_components_logo.png

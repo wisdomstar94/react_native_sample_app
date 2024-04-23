@@ -11,6 +11,7 @@ android 12 버전부터 기본으로 OS단에서 Splash Screen 이 제공되는�
 <br />
 
 ## Splash Screen 배경 색상 커스터마이징
+
 ### 1. (Android) `android/app/src/main/res/values/colors.xml` 에서 아래와 같이 수정합니다.
 ```
 <resources>
@@ -42,3 +43,47 @@ https://www.easyrgb.com/en/convert.php#inputFORM
 ![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/93ca461e-1254-4931-93e5-ce030ae671fa)
 ### 8. (IOS) 아래와 같이 ImageSet 에 포함된 ios 이미지들을 본 프로젝트의 ios/react_native_sample_app/Images.xcassets/SplashInitIcon.imageset/ 밑으로 복사(덮어씌기) 합니다.
 ![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/5ccd957b-b57e-4db0-b156-8cec80f644fd)
+
+<br />
+
+# App Icon 에 대하여
+android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다. 테마에 따라 앱 아이콘의 배경색상과 전경아이콘 색상도 변경되도록 지원하는 것이 가능해졌는데, 이를 위해서는 android app 에 적응형 아이콘을 적용해야 합니다. 아래에 앱 아이콘을 커스터마이징 할 수 있는 방법에 대해 기재하였습니다.
+
+## App Icon 커스터마이징 (Android)
+
+### 1. 512 x 512 사이즈의 App Icon 의 배경이미지와 App Icon 의 전경이미지를 준비합니다.
+예를 들어 다음과 같이 준비합니다.
+- ic_launcher_background.png<br />
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/2bc46474-9c7e-4a98-831f-ffb9d0279eed)
+- ic_launcher_foreground.svg<br />
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/4a0a8cfc-9d4a-4d02-b04d-987190e076c1)<br />
+(투명한 배경에 중앙에 텍스트가 위치한 이미지 입니다. 상하좌우 여백이 이정도 존재해야 합니다.)
+
+### 2. Android Studio 를 열고 android/ 폴더를 엽니다.
+
+### 3. res 폴더에 오른쪽 마우스 클릭 후 'New' -> 'Image Asset' 을 클릭합니다. 
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/eff2a020-0cf3-437d-9a34-aadef7bc23a5)
+
+### 4. 앱 아이콘을 등록합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/eccc0901-8b20-4099-90b2-5f8ccbf07247)
+위 이미지와 같이 icon type 은 "Launcher Icons (Adaptive and Legacy)" 를 선택한 후 Foreground Layer, Background Layer 에 해당하는 이미지를 등록해주세요. 그리고 옆에 미리보기가 표시되는데, 둥근 원안에 전경(foreground) 이미지가 온전히 들어가 있는지 확인해주시고, 만약 둥근 원 밖을 초과했을 경우 전경 이미지의 상하좌우 여백을 더 준 이미지로 교체해야 합니다. 모두 완료가 되었다면 Next 버튼을 클릭후 Finish 버튼을 클릭해주세요.
+
+### 5. `android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml` 파일을 아래와 같이 수정합니다.
+```
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background"/>
+    <foreground android:drawable="@drawable/ic_launcher_foreground"/>
+    <monochrome android:drawable="@drawable/ic_launcher_foreground"/> // <-- 이 부분을 추가해주세요.
+</adaptive-icon>
+```
+
+### 6. `android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml` 파일을 아래와 같이 수정합니다.
+```
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background"/>
+    <foreground android:drawable="@drawable/ic_launcher_foreground"/>
+    <monochrome android:drawable="@drawable/ic_launcher_foreground"/> // <-- 이 부분을 추가해주세요.
+</adaptive-icon>
+```
