@@ -49,6 +49,8 @@ https://www.easyrgb.com/en/convert.php#inputFORM
 # App Icon 에 대하여
 android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다. 테마에 따라 앱 아이콘의 배경색상과 전경아이콘 색상도 변경되도록 지원하는 것이 가능해졌는데, 이를 위해서는 android app 에 적응형 아이콘을 적용해야 합니다. 아래에 앱 아이콘을 커스터마이징 할 수 있는 방법에 대해 기재하였습니다.
 
+<br />
+
 ## App Icon 커스터마이징 (Android)
 
 ### 1. 512 x 512 사이즈의 App Icon 의 배경이미지와 App Icon 의 전경이미지를 준비합니다.
@@ -87,3 +89,21 @@ android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다
     <monochrome android:drawable="@drawable/ic_launcher_foreground"/> // <-- 이 부분을 추가해주세요.
 </adaptive-icon>
 ```
+
+<br />
+
+## App Icon 커스터마이징 (IOS)
+
+### 1. 1024 x 1024 사이즈의 App Icon 이미지를 준비합니다.
+
+### 2. `https://www.appicon.co/#app-icon` 에 접속하여 아이콘 이미지를 첨부한 후 "Generate" 버튼을 클릭하면 AppIcons.zip 파일이 다운로드 됩니다.
+
+### 3. zip 파일을 압축 해제 후, `Assets.xcassets/AppIcon.appiconset/` 폴더 밑에 있는 다양한 사이즈들의 이미지들이 있는 것을 확인 할 수 있습니다.
+
+### 4. ios 폴더를 xcode 로 실행합니다.
+
+### 5. xcode 에서 Images.xcassets -> AppIcon 으로 이동합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/6886acfb-4d79-49d4-a687-5049f4b2ea0d)
+
+### 6. 각 사이즈에 맞춰 이미지들을 등록합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/93250db8-c010-4ceb-8abc-29bbcb7eb499)
