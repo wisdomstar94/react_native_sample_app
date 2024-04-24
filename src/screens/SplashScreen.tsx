@@ -1,8 +1,10 @@
 import LottieView from 'lottie-react-native';
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
+import { useCustomNavigation } from '../hooks/use-navigation/use-navigation.hook';
 
-export function Splash() {
+export function SplashScreen() {
+  const navigation = useCustomNavigation();
   const [inited, setIninted] = useState(false);
 
   function onAnimationFinish(isCancelled: boolean) {
@@ -32,7 +34,7 @@ export function Splash() {
   useEffect(() => {
     console.log(`[${Date.now()}] @inited`, inited);
     if (inited) {
-      
+      navigation.replace('Test');
     }
   }, [inited]);
 
@@ -54,7 +56,7 @@ export function Splash() {
             height: 200,
             // backgroundColor: '#ff0',
           }}
-          source={require('./assets/splash-lottie-icon.json')}
+          source={require('../assets/splash-lottie-icon.json')}
           autoPlay
           loop={false}
           onAnimationFinish={onAnimationFinish}
