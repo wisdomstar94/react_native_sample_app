@@ -41,5 +41,19 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "keywords": [
+    "react", 
+    "native",
+    "리액트",
+    "네이티브",
+    "rn",
+    "샘플",
+    "sample",
+    "템플릿",
+    "template",
+    "안드로이드",
+    "android",
+    "ios"
+  ]
 }
