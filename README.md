@@ -2,6 +2,8 @@
 React Native 연구용 프로젝트 입니다.
 
 <br />
+<br />
+<br />
 
 # Splash Screen 에 대하여
 android 12 버전부터 기본으로 OS단에서 Splash Screen 이 제공되는데 이러한 기본 Splash Screen 에는 단순 색상의 배경과 중앙에 표시되는 아이콘으로 구성됩니다. 그러므로 12 버전 이하 및 이상 버전 안드로이드 기기와 ios 기기에서 일관성 높은 Splash Screen 을 보여주기 위해서는 모든 OS 에서 단순 색상의 배경에 아이콘이 중앙에 배치된 커스텀 Splash Screen 이 구동될 때 표시되게 하는 것이 좋은 선택일 수 있습니다. 본 프로젝트에는 이와 같은 설정을 직접 구현한 상태이며, Splash Screen 의 배경 색상과 중앙에 배치된 아이콘 이미지에 대한 커스터마이징을 하는 방법을 아래에 기술하였습니다. <br />
@@ -44,6 +46,8 @@ https://www.easyrgb.com/en/convert.php#inputFORM
 ### 8. (IOS) 아래와 같이 ImageSet 에 포함된 ios 이미지들을 본 프로젝트의 ios/react_native_sample_app/Images.xcassets/SplashInitIcon.imageset/ 밑으로 복사(덮어씌기) 합니다.
 ![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/5ccd957b-b57e-4db0-b156-8cec80f644fd)
 
+<br />
+<br />
 <br />
 
 # App Icon 에 대하여
@@ -107,3 +111,30 @@ android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다
 
 ### 6. 각 사이즈에 맞춰 이미지들을 등록합니다.
 ![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/93250db8-c010-4ceb-8abc-29bbcb7eb499)
+
+<br />
+<br />
+<br />
+
+# 패키지명에 대하여
+패키지명은 앱의 고유 식별자 입니다. android 및 ios 는 패키지명을 통해 앱을 식별합니다. 패키지명은 다른 앱과 중복되지 않도록 설정해야 합니다. 패키지명을 변경하는 방법은 아래애 기재하였습니다.
+
+<br />
+
+## 패키지명 변경 방법 (Android)
+### 1. android/ 폴더를 android studio 로 열어줍니다.
+
+### 2. 아래와 같이 변경하고자 하는 패키지명의 이름을 변경합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/17d46db9-d80d-435d-b102-87bd8126bb35)
+
+### 3. build.gradle 파일에 있는 기존 패키지명도 변경된 패키지명으로 수정 후 "Sync Now" 버튼을 클릭합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/578d01e9-eb78-4b6e-ad96-a1fdbe71649a)
+
+<br />
+
+## 패키지명 변경 방법 (IOS)
+### 1. ios/ 폴더를 xcode 로 열어줍니다.
+
+### 2. 아래와 같이 순서대로 클릭 후 "Bundle Identifier" 부분을 원하는 패키지명으로 입력해주세요.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/55208b52-3252-4693-adab-361aa644f9f9)
+

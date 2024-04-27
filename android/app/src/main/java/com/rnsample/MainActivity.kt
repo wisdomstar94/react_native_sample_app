@@ -1,4 +1,4 @@
-package com.react_native_sample_app
+package com.rnsample
 
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
