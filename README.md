@@ -138,3 +138,40 @@ android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다
 ### 2. 아래와 같이 순서대로 클릭 후 "Bundle Identifier" 부분을 원하는 패키지명으로 입력해주세요.
 ![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/7ff3939f-b1ba-4a39-bc60-bd181c3a4b62)
 
+<br />
+<br />
+<br />
+
+# 앱 이름에 대하여
+앱스토어에서 표시되는 앱의 이름을 설정하는 방법에 대해 다음과 같이 기재합니다.
+
+<br />
+
+## 앱 이름 변경 방법 (Android)
+### 1. strings.xml 의 app_name 에 영문일 때 표시될 앱 이름을 작성합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/29707453-115b-4d27-9524-fe60b97921fe)
+
+### 2. res 폴더 밑에 values-ko/string.xml 파일을 생성 후 아래처럼 한글일 때 표시될 앱 이름을 작성합니다.
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/a5708613-9372-4d8b-b300-c7d65c455050)
+
+<br />
+
+## 앱 이름 변경 방법 (IOS)
+
+### 1. korean locale 추가
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/1209176d-f049-4668-8540-e3ec11fcb812)
+
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/d421b586-6623-42b7-81db-18ed090c2465)
+
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/9854ad2f-e525-4c6e-b08f-3dfe98fc689d)
+
+### 2. 각 언어마다 앱 이름에 대한 key, value 작성
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/d07eeadb-ac94-48ef-8731-d23b52656899)
+
+<br />
+
+## 앱 이름 변경 방법 (공통)
+### 1. app.json 의 displayName 을 변경합니다. (공통)
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/5cdb8980-5c20-4518-8873-3909871a0633)
+
+
