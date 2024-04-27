@@ -136,5 +136,5 @@ android 13 버전 부터 앱 테마 아이콘을 지원하기 시작했습니다
 ### 1. ios/ 폴더를 xcode 로 열어줍니다.
 
 ### 2. 아래와 같이 순서대로 클릭 후 "Bundle Identifier" 부분을 원하는 패키지명으로 입력해주세요.
-![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/55208b52-3252-4693-adab-361aa644f9f9)
+![image](https://github.com/wisdomstar94/react_native_sample_app/assets/93423564/7ff3939f-b1ba-4a39-bc60-bd181c3a4b62)
 
