@@ -2,12 +2,15 @@ import { Text, View } from 'react-native';
 import { useRealmManager } from '../hooks/use-realm-manager/use-realm-manager.hook';
 import { User } from '../models/user.model';
 import { Log } from '../models/log.model';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import uuid from 'react-native-uuid';
 import { UpdateMode } from 'realm';
 // import dayjs from 'dayjs';
+// import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
 
 export function TestScreen() {
+  const [sumNumber, setSumNumber] = useState(0);
+
   const realmManager = useRealmManager({
     schema: [User, Log],
     onChange(modelName, items, changes) {
@@ -88,6 +91,12 @@ export function TestScreen() {
     });
   }, [realmManager.isInit]);
 
+  useEffect(() => {
+    // RTNCalculator?.add(10, 11).then((result) => {
+    //   setSumNumber(result);
+    // });
+  }, []);
+
   return (
     <>
       <View
@@ -100,7 +109,7 @@ export function TestScreen() {
           // flexDirection: 'column',
           backgroundColor: '#ffffff',
         }}>
-        <Text>Test Screen 입니다.</Text>
+        <Text>Test Screen 입니다. { sumNumber }</Text>
       </View>
     </>
   );
