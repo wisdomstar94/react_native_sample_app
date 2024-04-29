@@ -6,6 +6,7 @@
     "android": "react-native run-android",
     "android:adb": "adb -s 디바이스시리얼번호 install -r ./android/app/build/outputs/apk/debug/app-debug.apk",
     "ios": "react-native run-ios",
+    "codegen": "react-native codegen",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
