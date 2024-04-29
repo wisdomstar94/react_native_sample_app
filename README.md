@@ -138,6 +138,15 @@ dependencies {
 </manifest>
 ```
 
+### 11. `android/app/src/main/java/com/rnsample/MainActivity.kt` 파일을 다음과 같이 수정합니다.
+```
+  // 이 함수 추가!
+  override fun onCreate(savedInstanceState: Bundle?) {
+    installSplashScreen()
+    super.onCreate(savedInstanceState)
+  }
+```
+
 <br />
 
 ## Splash Screen 배경 색상 및 중앙 아이콘 설정하기 (IOS)
