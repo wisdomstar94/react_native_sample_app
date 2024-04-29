@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import uuid from 'react-native-uuid';
 import { UpdateMode } from 'realm';
 // import dayjs from 'dayjs';
-// import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
+import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
 
 export function TestScreen() {
   const [sumNumber, setSumNumber] = useState(0);
@@ -92,9 +92,9 @@ export function TestScreen() {
   }, [realmManager.isInit]);
 
   useEffect(() => {
-    // RTNCalculator?.add(10, 11).then((result) => {
-    //   setSumNumber(result);
-    // });
+    RTNCalculator?.add(10, 11).then((result) => {
+      setSumNumber(result);
+    });
   }, []);
 
   return (
