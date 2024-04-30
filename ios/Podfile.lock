@@ -1299,7 +1299,28 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - rtn-calculator (0.0.6):
+  - rtn-calculator (0.0.9):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - rtn-deviceinfo (0.0.5):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1384,6 +1405,7 @@ DEPENDENCIES:
   - RealmJS (from `../node_modules/realm`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - rtn-calculator (from `../node_modules/rtn-calculator`)
+  - rtn-deviceinfo (from `../node_modules/rtn-deviceinfo`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1509,6 +1531,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   rtn-calculator:
     :path: "../node_modules/rtn-calculator"
+  rtn-deviceinfo:
+    :path: "../node_modules/rtn-deviceinfo"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1571,7 +1595,8 @@ SPEC CHECKSUMS:
   ReactCommon: 2cde697fd80bd31da1d6448d25a5803088585219
   RealmJS: 3fdc3b6cb6d4ff67eaf0e5f7f861be51304e7525
   RNScreens: 63fe8222c172a79f5c30dd1aefaeb369c6eb57b6
-  rtn-calculator: 1370b9ad3fb5df3d124d9ad6c1665394915f592a
+  rtn-calculator: d08430c34cee15a47167b231f1c243627eebd9f6
+  rtn-deviceinfo: d21adf3e3e317727b80ca593e1d9869a6f1e1bee
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: ff1d575b119f510a5de23c22a794872562078ccf
 

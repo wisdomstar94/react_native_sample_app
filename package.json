@@ -7,6 +7,7 @@
     "android:adb": "adb -s 디바이스시리얼번호 install -r ./android/app/build/outputs/apk/debug/app-debug.apk",
     "ios": "react-native run-ios",
     "codegen": "react-native codegen",
+    "pod:install": "cd ios/ && bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
@@ -21,7 +22,8 @@
     "react-native-screens": "^3.31.1",
     "react-native-uuid": "^2.0.2",
     "realm": "^12.7.1",
-    "rtn-calculator": "github:wisdomstar94/rtn-calculator"
+    "rtn-calculator": "github:wisdomstar94/rtn-calculator",
+    "rtn-deviceinfo": "github:wisdomstar94/rtn-deviceinfo"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

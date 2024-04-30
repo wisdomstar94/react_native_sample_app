@@ -7,9 +7,11 @@ import uuid from 'react-native-uuid';
 import { UpdateMode } from 'realm';
 // import dayjs from 'dayjs';
 import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
+import RTNDeviceinfo from 'rtn-deviceinfo/js/NativeRtnDeviceinfo';
 
 export function TestScreen() {
   const [sumNumber, setSumNumber] = useState(0);
+  const [deviceModelName, setDeviceModelName] = useState('null');
 
   const realmManager = useRealmManager({
     schema: [User, Log],
@@ -95,6 +97,12 @@ export function TestScreen() {
     RTNCalculator?.add(10, 11).then((result) => {
       setSumNumber(result);
     });
+
+    RTNDeviceinfo?.getDeviceModel().then((result) => {
+      // console.log('@getDeviceModel.result', result);
+      setDeviceModelName(result);
+      return '';
+    });
   }, []);
 
   return (
@@ -110,6 +118,7 @@ export function TestScreen() {
           backgroundColor: '#ffffff',
         }}>
         <Text>Test Screen 입니다. { sumNumber }</Text>
+        <Text>{ deviceModelName }</Text>
       </View>
     </>
   );
