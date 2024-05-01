@@ -38,6 +38,7 @@ export function TestImageScreen() {
                 height: '100%',
               }}
               resizeMode={'cover'}
+              fadeDuration={0}
               />
           </View>
         </ScrollView>
