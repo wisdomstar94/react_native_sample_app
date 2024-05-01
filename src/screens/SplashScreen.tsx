@@ -45,7 +45,8 @@ export function SplashScreen() {
       // navigation.replace('TestScreen');
       // navigation.replace('TestRealm'); 
       // navigation.replace('TestScrollViewScreen');
-      navigation.replace('TestTextInputScreen');
+      // navigation.replace('TestTextInputScreen');
+      navigation.replace('TestImageScreen');
     }
   }, [inited]);
 

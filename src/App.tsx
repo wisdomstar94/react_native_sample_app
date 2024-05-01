@@ -5,6 +5,7 @@ import { TestScreen } from './screens/TestScreen';
 import { TestRealmScreen } from './screens/TestRealmScreen';
 import { TestScrollViewScreen } from './screens/TestScrollViewScreen';
 import { TestTextInputScreen } from './screens/TestTextInputScreen';
+import { TestImageScreen } from './screens/TestImageScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ export type Screens = {
   TestRealmScreen: undefined,
   TestScrollViewScreen: undefined,
   TestTextInputScreen: undefined,
+  TestImageScreen: undefined,
 };
 
 export default function App() {
@@ -25,6 +27,7 @@ export default function App() {
         <Stack.Screen name="TestRealmScreen" component={TestRealmScreen} />
         <Stack.Screen name="TestScrollViewScreen" component={TestScrollViewScreen} />
         <Stack.Screen name="TestTextInputScreen" component={TestTextInputScreen} />
+        <Stack.Screen name="TestImageScreen" component={TestImageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
