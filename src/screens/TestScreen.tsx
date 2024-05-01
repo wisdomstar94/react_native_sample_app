@@ -13,7 +13,7 @@ import RTNLottieView from 'rtn-lottie-view/js/RtnLottieViewNativeComponent';
 export function TestScreen() {
   const [sumNumber, setSumNumber] = useState(0);
   const [deviceModelName, setDeviceModelName] = useState('null');
-
+ 
   // const realmManager = useRealmManager({
   //   schema: [User, Log],
   //   onChange(modelName, items, changes) {
