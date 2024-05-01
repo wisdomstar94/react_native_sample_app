@@ -2,8 +2,10 @@ import LottieView from 'lottie-react-native';
 import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { useCustomNavigation } from '../hooks/use-navigation/use-navigation.hook';
+import { useCountStore } from '../stores/count.store';
 
 export function SplashScreen() {
+  const countStore = useCountStore((state) => state);
   const navigation = useCustomNavigation();
   const [inited, setIninted] = useState(false);
 
@@ -32,10 +34,16 @@ export function SplashScreen() {
   }, []);
 
   useEffect(() => {
+    countStore.incrementCount();
+    countStore.incrementCount();
+    countStore.incrementCount();
+  }, []);
+
+  useEffect(() => {
     console.log(`[${Date.now()}] @inited`, inited);
     if (inited) {
-      // navigation.replace('Test');
-      navigation.replace('TestRealm'); 
+      navigation.replace('Test');
+      // navigation.replace('TestRealm'); 
     }
   }, [inited]);
 

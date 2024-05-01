@@ -24,7 +24,8 @@
     "realm": "^12.7.1",
     "rtn-calculator": "github:wisdomstar94/rtn-calculator",
     "rtn-deviceinfo": "github:wisdomstar94/rtn-deviceinfo",
-    "rtn-lottie-view": "github:wisdomstar94/rtn-lottie-view"
+    "rtn-lottie-view": "github:wisdomstar94/rtn-lottie-view",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

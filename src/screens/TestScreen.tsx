@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react';
 import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
 import RTNDeviceinfo from 'rtn-deviceinfo/js/NativeRtnDeviceinfo';
 import RTNLottieView from 'rtn-lottie-view/js/RtnLottieViewNativeComponent';
+import { useCountStore } from '../stores/count.store';
 
 export function TestScreen() {
+  const countStore = useCountStore((state) => state);
   const [sumNumber, setSumNumber] = useState(0);
   const [deviceModelName, setDeviceModelName] = useState('null');
 
@@ -34,7 +36,7 @@ export function TestScreen() {
           backgroundColor: '#ffffff',
         }}>
         <Text>Test Screen 입니다. { sumNumber }</Text>
-        <Text>{ deviceModelName }</Text>
+        <Text>{ '(' + countStore.count + ')' }</Text>
         <RTNLottieView 
           style={{ 
             width: '50%', 
