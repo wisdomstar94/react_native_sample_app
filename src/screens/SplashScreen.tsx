@@ -34,7 +34,8 @@ export function SplashScreen() {
   useEffect(() => {
     console.log(`[${Date.now()}] @inited`, inited);
     if (inited) {
-      navigation.replace('Test');
+      // navigation.replace('Test');
+      navigation.replace('TestRealm'); 
     }
   }, [inited]);
 
