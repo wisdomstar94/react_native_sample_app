@@ -5,6 +5,47 @@ React Native 연구용 프로젝트 입니다.
 <br />
 <br />
 
+# React Native New Architecture 에 대하여
+react native 0.68 부터 new architecture 를 실험적으로 사용할 수 있게 되었습니다. 새로운 아키텍처는 레거시 아키텍처에서 불가능했던 기능과 개선 사항을 구현하고 있는데 자세한 사항은 [여기](https://reactnative.dev/docs/the-new-architecture/landing-page)에서 확인하실 수 있습니다. 본 프로젝트도 새로운 아키텍처를 중심으로 환경설정 및 설명을 진행하고자 합니다.
+
+<br />
+
+## 새로운 아키텍처를 사용하는 방법 (Android)
+
+### 1. `android/gradle.properties` 파일을 아래와 같이 수정합니다.
+```
+...
+newArchEnabled=true
+...
+```
+newArchEnabled 속성을 true 로 수정해주세요.
+
+### 2. npm 패키지에 변동(추가, 수정, 삭제 등)이 있을 때마다 아래 과정을 진행해주세요.
+```
+cd android
+```
+```
+./gradlew generateCodegenArtifactsFromSchema
+```
+
+<br />
+
+## 새로운 아키텍처를 사용하는 방법 (IOS)
+
+### 1. `ios` 폴더로 이동합니다.
+```
+cd ios
+```
+
+### 2. 아래 명령어를 이용해 `pod install` 을 실행합니다.
+```
+bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install
+```
+
+<br />
+<br />
+<br />
+
 # Splash Screen 에 대하여 (배경 + 아이콘)
 android 12 버전부터 기본으로 OS단에서 Splash Screen 이 제공되는데 이러한 기본 Splash Screen 에는 단순 색상의 배경과 중앙에 표시되는 아이콘으로 구성됩니다. 그러므로 12 버전 이하 및 이상 버전 안드로이드 기기와 ios 기기에서 일관성 높은 Splash Screen 을 보여주기 위해서는 모든 OS 에서 단순 색상의 배경에 아이콘이 중앙에 배치된 커스텀 Splash Screen 이 구동될 때 표시되게 하는 것이 좋은 선택일 수 있습니다. 본 프로젝트에는 이와 같은 설정을 직접 구현한 상태이며, Splash Screen 의 배경 색상과 중앙에 배치된 아이콘 이미지에 대한 커스터마이징을 하는 방법을 아래에 기술하였습니다. <br />
 (※ [react-native-splash-screen](https://www.npmjs.com/package/react-native-splash-screen) 또는 [react-native-bootsplash
