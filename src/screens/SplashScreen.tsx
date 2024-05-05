@@ -42,11 +42,11 @@ export function SplashScreen() {
   useEffect(() => {
     console.log(`[${Date.now()}] @inited`, inited);
     if (inited) {
-      // navigation.replace('TestScreen');
+      navigation.replace('TestScreen');
       // navigation.replace('TestRealm'); 
       // navigation.replace('TestScrollViewScreen');
       // navigation.replace('TestTextInputScreen');
-      navigation.replace('TestImageScreen');
+      // navigation.replace('TestImageScreen');
     }
   }, [inited]);
 

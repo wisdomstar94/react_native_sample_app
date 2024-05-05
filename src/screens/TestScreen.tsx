@@ -5,6 +5,7 @@ import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
 import RTNDeviceinfo from 'rtn-deviceinfo/js/NativeRtnDeviceinfo';
 import RTNLottieView from 'rtn-lottie-view/js/RtnLottieViewNativeComponent';
 import { useCountStore } from '../stores/count.store';
+import RTNMyLibrary from 'rtn_my_library/js/NativeRtnMyLibrary';
 
 export function TestScreen() {
   const countStore = useCountStore((state) => state);
@@ -16,10 +17,10 @@ export function TestScreen() {
       setSumNumber(result);
     });
 
-    RTNDeviceinfo?.getDeviceModel().then((result) => {
-      // console.log('@getDeviceModel.result', result);
+    console.log('@RTNMyLibrary', RTNMyLibrary);
+    RTNMyLibrary?.getDeviceModel().then((result) => {
+      console.log('@@@RTNMyLibrary.getDeviceModel.result', result);
       setDeviceModelName(result);
-      return '';
     });
   }, []);
 

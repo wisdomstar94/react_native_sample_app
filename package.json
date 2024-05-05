@@ -22,6 +22,7 @@
     "react-native-screens": "^3.31.1",
     "react-native-uuid": "^2.0.2",
     "realm": "^12.7.1",
+    "rtn_my_library": "github:wisdomstar94/rtn_my_library",
     "rtn-calculator": "github:wisdomstar94/rtn-calculator",
     "rtn-deviceinfo": "github:wisdomstar94/rtn-deviceinfo",
     "rtn-lottie-view": "github:wisdomstar94/rtn-lottie-view",
