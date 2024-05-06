@@ -2,10 +2,9 @@ import { Text, View } from 'react-native';
 import { useEffect, useState } from 'react';
 // import dayjs from 'dayjs';
 import RTNCalculator from 'rtn-calculator/js/NativeRtnCalculator';
-import RTNDeviceinfo from 'rtn-deviceinfo/js/NativeRtnDeviceinfo';
 import RTNLottieView from 'rtn-lottie-view/js/RtnLottieViewNativeComponent';
 import { useCountStore } from '../stores/count.store';
-import RTNMyLibrary from 'rtn_my_library/js/NativeRtnMyLibrary';
+import library from 'rtn_my_library';
 
 export function TestScreen() {
   const countStore = useCountStore((state) => state);
@@ -17,8 +16,9 @@ export function TestScreen() {
       setSumNumber(result);
     });
 
-    console.log('@RTNMyLibrary', RTNMyLibrary);
-    RTNMyLibrary?.getDeviceModel().then((result) => {
+    // console.log('@RTNMyLibrary', RTNMyLibrary);
+    console.log('@library', library);
+    library?.getDeviceModel().then((result) => {
       console.log('@@@RTNMyLibrary.getDeviceModel.result', result);
       setDeviceModelName(result);
     });
