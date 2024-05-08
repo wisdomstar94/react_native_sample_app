@@ -8,8 +8,8 @@ export function TestNativeImageScreen() {
 
   useEffect(() => {
     setTimeout(() => {
-      library?.getDeviceModel().then((result) => {
-        console.log('library?.getDeviceModel() result', `<${result}>`);
+      library?.getRtnMyLibraryVersion().then((result) => {
+        console.log('library?.getRtnMyLibraryVersion() result', `<${result}>`);
       });
       
       library?.requestGalleryImage().then((result) => {
