@@ -15,6 +15,8 @@
 		7699B88040F8A987B510C191 /* libPods-react_native_sample_app-react_native_sample_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-react_native_sample_app-react_native_sample_appTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A54D73DC95AE2969F6DA5EFC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5816A18E6202ECB39B48F928 /* PrivacyInfo.xcprivacy */; };
+		AC31C5512BEA4F4F008CC700 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC31C5502BEA4F4F008CC700 /* Photos.framework */; };
+		AC31C5532BEA4F54008CC700 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC31C5522BEA4F54008CC700 /* PhotosUI.framework */; };
 		ACD6E2372BDE419600C91D48 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ACD6E2362BDE419600C91D48 /* InfoPlist.xcstrings */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +44,13 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-react_native_sample_app-react_native_sample_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_sample_app-react_native_sample_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-react_native_sample_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_sample_app.debug.xcconfig"; path = "Target Support Files/Pods-react_native_sample_app/Pods-react_native_sample_app.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-react_native_sample_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_sample_app.release.xcconfig"; path = "Target Support Files/Pods-react_native_sample_app/Pods-react_native_sample_app.release.xcconfig"; sourceTree = "<group>"; };
-		5816A18E6202ECB39B48F928 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = react_native_sample_app/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5816A18E6202ECB39B48F928 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = react_native_sample_app/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-react_native_sample_app-react_native_sample_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_sample_app-react_native_sample_appTests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_sample_app-react_native_sample_appTests/Pods-react_native_sample_app-react_native_sample_appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-react_native_sample_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_sample_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = react_native_sample_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-react_native_sample_app-react_native_sample_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_sample_app-react_native_sample_appTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_sample_app-react_native_sample_appTests/Pods-react_native_sample_app-react_native_sample_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC31C5502BEA4F4F008CC700 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AC31C5522BEA4F54008CC700 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		ACD6E2362BDE419600C91D48 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -65,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-react_native_sample_app.a in Frameworks */,
+				AC31C5512BEA4F4F008CC700 /* Photos.framework in Frameworks */,
+				AC31C5532BEA4F54008CC700 /* PhotosUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC31C5522BEA4F54008CC700 /* PhotosUI.framework */,
+				AC31C5502BEA4F4F008CC700 /* Photos.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-react_native_sample_app.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-react_native_sample_app-react_native_sample_appTests.a */,
