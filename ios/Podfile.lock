@@ -1363,7 +1363,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - rtn_my_library (0.0.52):
+  - rtn_my_library (0.0.54):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1647,7 +1647,7 @@ SPEC CHECKSUMS:
   rtn-calculator: d08430c34cee15a47167b231f1c243627eebd9f6
   rtn-deviceinfo: d21adf3e3e317727b80ca593e1d9869a6f1e1bee
   rtn-lottie-view: fd5041f94ac7ac95a232ba3e854737600033fe59
-  rtn_my_library: 8a8f74780bd92c5799dd7002a8f3ba28640df3f1
+  rtn_my_library: ef8965f2b669c719931ead601915a29ece71e276
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: b9a182ab00cf25926e7f79657d08c5d23c2d03b0
 
